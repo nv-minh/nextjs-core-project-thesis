@@ -2,8 +2,6 @@ import { EditOutlined } from '@ant-design/icons';
 import { Tag } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
 
-import styles from './styles.module.scss';
-
 const columns = (t: any): ColumnsType<DataType> => [
   {
     title: t(`module_1.label.task`),
@@ -22,35 +20,15 @@ const columns = (t: any): ColumnsType<DataType> => [
     render(value) {
       switch (value) {
         case 'todo':
-          return (
-            <Tag color="default" className={styles.textCapitalize}>
-              {value}
-            </Tag>
-          );
+          return <Tag color="default">{value}</Tag>;
         case 'in progress':
-          return (
-            <Tag color="orange" className={styles.textCapitalize}>
-              {value}
-            </Tag>
-          );
+          return <Tag color="orange">{value}</Tag>;
         case 'done':
-          return (
-            <Tag color="success" className={styles.textCapitalize}>
-              {value}
-            </Tag>
-          );
+          return <Tag color="success">{value}</Tag>;
         case 'backlog':
-          return (
-            <Tag color="blue" className={styles.textCapitalize}>
-              {value}
-            </Tag>
-          );
+          return <Tag color="blue">{value}</Tag>;
         case 'canceled':
-          return (
-            <Tag color="red" className={styles.textCapitalize}>
-              {value}
-            </Tag>
-          );
+          return <Tag color="red">{value}</Tag>;
       }
     },
   },
@@ -61,23 +39,11 @@ const columns = (t: any): ColumnsType<DataType> => [
     render(value) {
       switch (value) {
         case 'low':
-          return (
-            <Tag color="green" className={styles.textCapitalize}>
-              {value}
-            </Tag>
-          );
+          return <Tag color="green">{value}</Tag>;
         case 'medium':
-          return (
-            <Tag color="orange" className={styles.textCapitalize}>
-              {value}
-            </Tag>
-          );
+          return <Tag color="orange">{value}</Tag>;
         case 'high':
-          return (
-            <Tag color="red" className={styles.textCapitalize}>
-              {value}
-            </Tag>
-          );
+          return <Tag color="red">{value}</Tag>;
       }
     },
   },

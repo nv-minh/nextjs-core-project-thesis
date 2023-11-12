@@ -2,7 +2,7 @@ import { DefaultSeoProps } from 'next-seo';
 
 const SEO: DefaultSeoProps = {
   title: 'Nextjs Core Project',
-  description: 'Nextjs Core Project by TruongDN',
+  description: 'Nextjs Core Project Thesis',
   titleTemplate: '%s | Nextjs Core Project',
   openGraph: {
     type: 'website',

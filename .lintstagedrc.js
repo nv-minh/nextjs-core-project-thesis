@@ -6,9 +6,8 @@ const buildEslintCommand = (filenames) =>
     .join(' --file ')}`;
 
 module.exports = {
-  '*.{js,ts,tsx,json,jsx,scss,css}': [
-    "prettier --write '**/*.{js,jsx,ts,tsx,scss,css,json}'",
-    "stylelint '**/*.{scss,css}' --fix",
+  '*.{js,ts,tsx,json,jsx,css}': [
+    "prettier --write '**/*.{js,jsx,ts,tsx,css,json}'",
     buildEslintCommand,
     'vitest related --run',
   ],

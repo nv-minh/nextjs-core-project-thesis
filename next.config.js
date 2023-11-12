@@ -48,3 +48,6 @@ module.exports = withBundleAnalyzer({
     domains: [],
   },
 });
+module.exports = {
+  distDir: 'build',
+};

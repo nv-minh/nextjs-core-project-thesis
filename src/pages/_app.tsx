@@ -2,7 +2,7 @@
 /* eslint-disable import/no-unused-modules */
 
 import 'antd/dist/reset.css';
-import '@styles/globals.scss';
+import '@styles/globals.css';
 
 import React, { ReactElement, ReactNode, useEffect } from 'react';
 import { NextPage } from 'next';
